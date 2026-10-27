@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GDR Swap — Non-custodial Solana swaps | God Rare (GDR)</title>
+<meta name="description" content="Swap Solana tokens non-custodially with GDR Swap, powered by Jupiter.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://plugin.jup.ag/plugin-v1.js" data-preload defer></script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><img src="assets/logo.svg" alt="GDR" width="110" height="28"></a>
+    <nav class="links" id="links">
+      <a href="index.html#features">Features</a><a href="index.html#security">Security</a><a href="index.html#roadmap">Roadmap</a><a href="index.html#faq">FAQ</a><a href="swap.html">Swap</a>
+      <a href="index.html#waitlist" class="btn btn-sm">Join the waitlist</a>
+    </nav>
+    <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="swap-hero">
+    <div class="glow"></div>
+    <div class="wrap" style="position:relative">
+      <p class="eyebrow">GDR Swap · Non-custodial</p>
+      <h1 style="font-size:clamp(2rem,5vw,3.2rem)">Swap Solana tokens<br><span class="gold">from your own wallet.</span></h1>
+      <p class="lead" style="margin-bottom:32px">Connect Phantom or another Solana wallet. Routing and execution powered by Jupiter.</p>
+      <div class="swap-box"><div id="jupiter-plugin"></div></div>
+      <p class="form-msg" id="swap-status" role="status"></p>
+      <div class="notice" style="text-align:left">
+        <h3>Before you swap</h3>
+        <ul>
+          <li>GDR never holds your funds or private keys. You sign every transaction in your own wallet.</li>
+          <li>Swaps execute on-chain on Solana via Jupiter. Transactions are final and cannot be reversed.</li>
+          <li>Crypto assets are volatile; prices can move between quote and execution. Check slippage and token addresses.</li>
+          <li>Not available to persons in sanctioned or restricted jurisdictions.</li>
+          <li>By using GDR Swap you agree to the <a href="#">Terms</a>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <img src="assets/logo.svg" alt="GDR" width="96" height="24">
+      <nav><a href="#">Terms</a><a href="#">Privacy</a><a href="mailto:hello@example.com">Contact</a></nav>
+    </div>
+    <p class="disclaimer">Risk disclaimer: Crypto assets are volatile and can lose value rapidly. You could lose some or all of your investment. Nothing on this website is financial, investment, legal, or tax advice, or an offer to buy or sell any asset. Exchange services described are planned and not yet available. GDR Swap is a non-custodial interface to Jupiter; swaps execute on-chain from your own wallet.</p>
+    <p class="copy">© 2026 GDR Corporation. All rights reserved.</p>
+  </div>
+</footer>
+<script>const m=document.getElementById("menu"),l=document.getElementById("links");m.addEventListener("click",()=>m.setAttribute("aria-expanded",l.classList.toggle("open")));</script>
+<script src="js/swap.js"></script>
+</body>
+</html>
