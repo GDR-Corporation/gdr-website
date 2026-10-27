@@ -83,3 +83,10 @@ details p{margin-top:12px}
   .waitlist{flex-direction:column}
   .foot-top{flex-direction:column;align-items:flex-start}
 }
+/* Swap page + Jupiter Plugin theme (RGB triplets per Jupiter docs) */
+:root{--jupiter-plugin-primary:212,168,67;--jupiter-plugin-background:10,10,11;--jupiter-plugin-primaryText:236,235,230;--jupiter-plugin-warning:245,217,139;--jupiter-plugin-interactive:38,38,44;--jupiter-plugin-module:22,22,26}
+.swap-hero{padding:64px 0 40px;text-align:center;position:relative;overflow:hidden}
+.swap-box{max-width:460px;margin:0 auto;background:var(--card);border:1px solid var(--gold-d);border-radius:var(--radius);padding:8px;box-shadow:0 20px 60px -30px rgba(212,168,67,.5)}
+#jupiter-plugin{min-height:600px}
+.notice{max-width:720px;margin:32px auto 0;background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);padding:20px 24px}
+.notice ul{margin:8px 0 0 18px;color:var(--muted);font-size:.9rem}.notice a{color:var(--gold)}
